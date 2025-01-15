@@ -49,7 +49,7 @@ if __name__ == "__main__":
     params = fit_distance_height_relation(distances, heights)
     print(f"Fitted parameters: a = {params[0]:.2f}, b = {params[1]:.2f}")
 
-    new_image_path = "cone_predict.jpeg"  
+    new_image_path = "cone_predict.jpeg"
     new_cone_height = detect_cone_and_display(new_image_path)
     predicted_distance = predict_distance(new_cone_height, params)
     print(f"Predicted distance: {predicted_distance:.2f} cm")
